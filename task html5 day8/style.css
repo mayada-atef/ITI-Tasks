@@ -1,0 +1,22 @@
+
+.clicked{
+   background-color: green;
+}
+
+table {
+    margin: 0 auto;
+    font-size: 32px;
+    
+}
+
+button{
+    padding: 5px;
+    font-size: 16px;
+
+}
+div{
+    text-align: center;
+}
+#buttonDiv{
+    margin: 20px 0px ;
+}

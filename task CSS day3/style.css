@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 200px;
+    height: 150px;
+}
+.one,.two{
+    border: 2px solid black;
+    height: 200px;
+}
+.one p{
+    display: inline;
+    float: right;
+}
+.two p{
+    display: inline;
+}
+.two img{
+    float: right;
+}
+
+#whatsapp{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+}

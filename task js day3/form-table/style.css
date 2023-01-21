@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+table,td,tr{
+    border: 2px solid black;
+}
+form input{
+    display: block;
+}
+#addStudent{
+    background: green;
+    padding: 5px;
+    margin: 5px;
+}
+.form-input{
+    margin: 10px;
+}
+.red-btn{
+    background-color: red;
+}
+.yellow-btn{
+     background-color:yellow;
+}
+button{
+    padding: 5px;
+    margin: 5px;
+    /* color: #fff; */
+    border: 0;
+    outline: 0;
+}

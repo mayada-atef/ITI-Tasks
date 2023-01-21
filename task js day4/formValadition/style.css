@@ -1,0 +1,16 @@
+
+form{
+   width: 40%;
+   margin: 10px auto;
+
+   
+}
+.div-form{
+    margin: 20px 0px;
+}
+.error{
+    color: red;
+}
+.diplay-none{
+    display: none;
+}

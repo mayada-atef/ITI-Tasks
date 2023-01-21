@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math operation</title>
+</head>
+
+<body>
+    <h1>sumtion - multplication - division of 3 values</h1>
+    <script>
+        function sumtion(numbersArray) {
+
+            return numbersArray[0] + numbersArray[1] + numbersArray[2];
+
+        }
+        function division(numbersArray) {
+            return numbersArray[0] / numbersArray[1] / numbersArray[2];
+
+        }
+        function multplication(numbersArray) {
+            return numbersArray[0] * numbersArray[1] * numbersArray[2];
+
+        }
+        var numbersArray = [];
+        for (let index = 0; index < 3; index++) {
+            var numberInput = parseInt(prompt("enter a number"));
+            numbersArray.push(numberInput);
+        }
+        console.log(numbersArray);
+        var sum = sumtion(numbersArray);
+        var div = division(numbersArray);
+        var mul = multplication(numbersArray);
+
+        document.write(`<h2><span style="color: green ;">sum of 3 values</span> ${sum} </h2>
+   <h2><span style="color: green ;">multiplication of 3 values</span>${mul} </h2> 
+   <h2> <span style="color: green ;">division of 3 values</span> ${div} </h2>`)
+
+
+    </script>
+
+</body>
+
+</html>

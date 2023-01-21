@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form valadation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#" method="get">
+        <div class="div-form input-form">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" value="">
+        </div>
+        <div id="nameError" class="error diplay-none">
+            name required
+        </div>
+        <div class="div-form input-form">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" value="">
+        </div>
+        <div id="emailError" class="error diplay-none">
+            email must be valid
+        </div>
+        <div class="div-form input-form">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" value="">
+        </div>
+        <div id="passwordError" class="error diplay-none">
+            password must be 8 character
+        </div>
+        <div class="div-form">
+            <label>gender</label>
+            <input type="radio" name="gender" id="male" value="m">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="f">
+            <label for="female">female</label>
+        </div>
+        <div id="genderError" class="error diplay-none">
+            gender required
+        </div>
+
+        <div class="div-form">
+            <label>sports</label>
+            <input type="checkbox" name="sports" id="football" value="football">
+            <label for="football">football</label>
+            <input type="checkbox" name="sports" id="vollyball" value="vollyball">
+            <label for="vollyball">vollyball</label>
+            <input type="checkbox" name="sports" id="basketball" value="basketball">
+            <label for="basketball">basketball</label>
+
+
+        </div>
+        <div id="sportsError" class="error diplay-none">
+            please select two sports
+        </div>
+        <div class="div-form ">
+            <label>country</label>
+            <select name="country" id="country">
+                <option value=""></option>
+                <option value="egypt">egypt</option>
+                <option value="us">us</option>
+                <option value="china">china</option>
+            </select>
+        </div>
+        <div id="countryError" class="error diplay-none">
+            country required
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="sumbit" onclick="validation()">
+            <input type="reset" value="reset" onclick="resetErrorMessages()">
+        </div>
+
+
+    </form>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

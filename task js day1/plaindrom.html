@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var userString = prompt("please enter a string ");
+        var caseSensitive = confirm("are you want a case sensitie");
+        console.log(caseSensitive);
+        if (!caseSensitive) {
+            userString = userString.toLowerCase();
+        }
+
+        var flag = true;
+        for (var i = 0; i < Math.floor(userString.length / 2); i++) {
+            console.log(i);
+            console.log(userString[i]);
+            console.log(userString[userString.length - 1 - i]);
+            if (userString[i] != userString[userString.length - 1 - i]) {
+
+                flag = false;
+                break;
+            }
+        }
+        console.log(flag);
+        if (flag == false) {
+            document.write("this string is not aplaindrome")
+        }
+        else {
+            document.write(" yes, this string is aplaindrome")
+        }
+    </script>
+
+</body>
+
+</html>

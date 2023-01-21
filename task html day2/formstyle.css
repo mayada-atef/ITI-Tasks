@@ -1,0 +1,6 @@
+table{
+    border: 5px solid green;
+}
+td,th,tr{
+    border: 2px solid green;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>right click</title>
+</head>
+
+<body onmousedown="rightClick(event)">
+    <p> prevent context menu</p>
+    <script>
+        var body = document.getElementsByTagName("body")[0]
+
+        function rightClick(event) {
+            if (event.which == '3') {
+                alert("you forbidden from right click")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

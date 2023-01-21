@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>entering user info </h1>
+    <hr>
+
+    <script>
+        // name
+        do {
+            var str = true;
+            var name = prompt("please enter your name that hasen't anumber");
+            for (var i = 0; i < name.length; i++) {
+                if ((!isNaN(name[i])) && !(name[i] === " ")) {
+                    str = false;
+                }
+            }
+        } while (!str);
+
+        // phone
+
+        do {
+            var validPhone = true;
+            var phone = prompt("please enter your phone");
+            var lengthOfNumber = phone.length;
+            console.log(lengthOfNumber);
+            if (lengthOfNumber != 8) {
+                var validPhone = false;
+                console.log(validPhone);
+            }
+            phone = parseInt(phone);
+        } while (isNaN(phone) || (validPhone == false));
+
+
+        //mobile
+
+        do {
+
+            var mobile = prompt("please enter your mobile");
+            var regexPhone = /^01[0125][0-9]{8}$/;
+            var f = regexPhone.test(mobile);
+            console.log(f);
+
+        } while (!f);
+
+
+        // email
+
+        do {
+            var email = prompt("please enter your email");
+        } while (!(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email)));
+        var date = new Date();
+
+        console.log(date);
+        //color
+        var color = prompt("please enter your color");
+        document.write(`
+        <h2> <span style = "color: ${color};">Welcome dear guest</span> ${name}</h2>
+        <h2> <span  style = "color: ${color};">your telephone number</span> ${phone} </h2>
+        <h2> <span style = "color: ${color};">your mobile is </spa
+            n> ${mobile} </h2>
+        <h2> <span style = "color: ${color};">your email is </span> ${email} </h2>
+        <br> <br> <br>
+        <h2> <span style = "color: ${color};">date </span> ${date} </h2>`)
+        console.log(name);
+
+    </script>
+
+</body>
+
+</html>

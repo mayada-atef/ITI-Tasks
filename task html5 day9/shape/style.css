@@ -1,0 +1,18 @@
+#rect,#circle,#line{
+    background-color: transparent;
+    cursor: pointer; 
+    padding:5px;
+     border:1px solid black;
+    
+}
+div{
+    margin: 10px 0;
+}
+#clear{
+    background-color: rgb(130, 26, 26);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+}

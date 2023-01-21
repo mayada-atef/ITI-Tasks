@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexes</title>
+</head>
+
+<body>
+    <script>
+
+        var sentense = (prompt("enter a sentense")).toLowerCase();
+        var charSearch = (prompt("enter a char")).toLowerCase();
+        function getindexes(sentense, charSearch) {
+            var indexes = [];
+            for (let index = 0; index < sentense.length; index++) {
+                if (sentense[index] == charSearch) {
+                    indexes.push(index);
+                }
+
+            }
+            console.log(indexes);
+
+        }
+        getindexes(sentense, charSearch);
+
+    </script>
+
+</body>
+
+</html>

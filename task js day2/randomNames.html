@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random names</title>
+</head>
+
+<body>
+    <script>
+        function randomNames(names) {
+            var randomNumber1 = Math.floor(Math.random() * 4)
+            var randomNumber2 = Math.floor(Math.random() * 4)
+            // console.log(randomNumber1, randomNumber2);
+            return names[randomNumber1] + names[randomNumber2]
+        }
+        var names = [];
+        for (let index = 0; index < 5; index++) {
+            var name = prompt("enter a name");
+            names.push(name);
+        }
+        var twoRandomNames = randomNames(names);
+
+
+        document.write(`<h2><span style="color: green ;">names is  </span> ${names} </h2>
+        <h2> <span style="color: green ;"> random two names is </span>${twoRandomNames} </h2>
+                
+`)
+
+    </script>
+
+
+
+</body>
+
+</html>

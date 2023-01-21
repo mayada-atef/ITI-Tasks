@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(imgs/palace.jpg);
+    background-size:cover;
+    
+}
+form input,form a {
+    display:block;
+}
+.form-card{
+    width: 30%;
+    height: auto;
+    margin: 50px auto 0 ;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    padding: 75px 20px 20px;
+
+}
+.layout{
+    color: #fff;
+    border: 2px solid gray;
+    padding: 0 15px 10px;
+}
+
+#img-card{
+    width: 100px ;
+    height: 100px;
+    border-radius: 50%;
+     margin-left: 33%;
+    margin-top: -50px ;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px 0px 20px;
+
+}
+h1::first-letter{
+    font-size:50px;
+}
+
+#userName,#password{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 25px;
+    margin: 10px 0;
+    padding: 5px;
+
+}
+.btn{
+    background-color: rgb(176, 26, 26);
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    width: 70%;
+    margin: 10px auto;
+}

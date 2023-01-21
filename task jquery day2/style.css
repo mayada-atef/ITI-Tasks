@@ -1,0 +1,19 @@
+.d-none{
+  display: none;
+}
+ul{
+    list-style-type: none;
+}
+.hiddenList{
+    background-color:tan;
+    width: 100px;
+}
+
+#menu{
+    position: absolute;
+    height: 100vh;
+    background-color:violet;
+    width: 150px;
+    top:0px;
+    left: -50px;
+}

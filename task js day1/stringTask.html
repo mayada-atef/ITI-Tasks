@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var countOfE = 0;
+        var userString = prompt("please enter a string");
+        for (let index = 0; index < userString.length; index++) {
+            if (userString[index] == 'e' || userString[index] == 'E') {
+                countOfE++;
+            }
+
+        }
+        console.log("count of 'E' or 'e'  is " + countOfE);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting array</title>
+</head>
+
+<body>
+
+    <script>
+        var numbersArray = [];
+        var ascArr = [];
+        var descArr = [];
+        for (let index = 0; index < 5; index++) {
+            var numberInput = parseInt(prompt("enter a number"));
+            numbersArray.push(numberInput);
+            ascArr.push(numberInput);
+            descArr.push(numberInput);
+
+        }
+
+        var temp;
+        for (let i = 0; i < ascArr.length; i++) {
+            for (let j = i + 1; j < ascArr.length; j++) {
+                temp = 0;
+                if (ascArr[i] > ascArr[j]) {
+                    temp = ascArr[i];
+                    ascArr[i] = ascArr[j];
+                    ascArr[j] = temp;
+                }
+            }
+        }
+
+        for (let i = 0; i < descArr.length; i++) {
+            for (let j = i + 1; j < descArr.length; j++) {
+                if (descArr[i] < descArr[j]) {
+                    temp = 0;
+                    temp = descArr[i];
+                    descArr[i] = descArr[j];
+                    descArr[j] = temp;
+                }
+            }
+        }
+        document.write(`<h2><span style="color: green ;">your array </span> ${numbersArray} </h2>
+        <h2> <span style="color: green ;">your  ascending sorting array</span>${ascArr} </h2>
+                <h2> <span style="color: green ;">your descending sorted array </span> ${descArr} </h2>
+`)
+
+        console.log(" asc Sorted array=>", ascArr);
+        console.log("desc Sorted array=>", descArr);
+    </script>
+</body>
+
+</html>

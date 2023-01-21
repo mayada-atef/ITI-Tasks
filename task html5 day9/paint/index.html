@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>draw shape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="text-align: center;">
+    <div>
+        <button id="rect">
+            <svg width="100" height="50">
+                <rect width="100" height="50" x="0" y="0" fill="rgb(255, 127, 80,0.99)" />
+            </svg>
+        </button>
+        <button id="circle">
+            <svg width="100" height="50">
+                <circle cx="50" cy="25" r="25" fill="rgb(255, 127, 80,0.99)" />
+
+            </svg>
+        </button>
+        <button id="line">
+            <svg width="100" height="50">
+                <path stroke-width="2" d="M0 0 L100 50" stroke="rgb(255, 127, 80,0.99)" />
+            </svg>
+        </button>
+        <!-- <button id="line">
+            <svg width="100" height="50">
+                <path stroke-width="2" d="M0 0 L100 50" stroke="rgb(255, 127, 80,0.99)" />
+            </svg>
+        </button> -->
+        <button id="eraser">
+            <svg width="100" height="50">
+                <path stroke-width="2" d="M60,5 L85,25" stroke="rgb(255, 127, 80,0.99)" />
+                <path stroke-width="2" d="M65,45 L85,25" stroke="rgb(255, 127, 80,0.99)" />
+                <path stroke-width="2" d="M65,45 L40,25" stroke="rgb(255, 127, 80,0.99)" />
+                <path stroke-width="2" d="M60,5 L40,25" stroke="rgb(255, 127, 80,0.99)" />
+                <polygon points="40,25 65,45 55,50 35,35" style="fill:rgb(255, 127, 80,0.99);stroke-width:1" />
+            </svg>
+        </button>
+        <button id="random">
+            <img src="./Capture.PNG" alt="" style="height:50px ; width:100px">
+        </button>
+
+
+
+
+    </div>
+    <div> <label for="stroke">stroke color</label>
+        <br>
+        <input type="color" id="stroke">
+        <br>
+        <label for="fill">fill color</label>
+        <br>
+        <input type="color" id="fill">
+    </div>
+
+    <div>
+        <canvas width="500px" height="500px" id="PaintCanvs">
+            <svg width="100" height="50">
+                <path stroke-width="2" d="M0 0 L100 50" stroke="rgb(255, 127, 80,0.99)" />
+            </svg>
+        </canvas>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+
+</html>
